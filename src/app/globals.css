@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for the site, defined the Tailwind v4 way.
+  Each --color-* token becomes a utility automatically, e.g.
+  --color-gold -> bg-gold / text-gold / border-gold.
+
+  Palette: "dark shell, light page, gold accent".
+  - ink   = near-black charcoal for header/footer/nav
+  - paper = warm off-white reading surface for content
+  - gold  = restrained amber accent for links / buttons / active states
+*/
+@theme {
+  --color-ink: #15161a;
+  --color-ink-soft: #1f2127;
+
+  --color-paper: #faf9f6;
+  --color-paper-soft: #f0eee8;
+
+  --color-gold: #c79a3a;
+  --color-gold-soft: #e4c878;
+  --color-gold-dark: #a67c22;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Styling for rendered markdown article bodies. */
+.prose-article {
+  @apply leading-relaxed text-ink/90;
+}
+.prose-article h2 {
+  @apply mt-10 mb-3 text-2xl font-semibold text-ink;
+}
+.prose-article h3 {
+  @apply mt-8 mb-2 text-xl font-semibold text-ink;
+}
+.prose-article p {
+  @apply my-4;
+}
+.prose-article ul {
+  @apply my-4 list-disc space-y-1 pl-6;
+}
+.prose-article ol {
+  @apply my-4 list-decimal space-y-1 pl-6;
+}
+.prose-article a {
+  @apply text-gold-dark underline underline-offset-2 hover:text-gold;
+}
+.prose-article blockquote {
+  @apply my-4 border-l-4 border-gold/50 pl-4 italic text-ink/70;
+}
