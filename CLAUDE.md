@@ -61,5 +61,11 @@ src/lib/                content.ts (reads Markdown), types.ts, format.ts
 
 - Adding content = adding a Markdown file; the filename becomes the URL slug.
 - Keep the `Disclaimer` component on any page showing gear/supplements/health.
-- Keep `PlaceholderBanner` site-wide until real, sourced data replaces the demo.
+- Every profile has a `status` field: `fictional` (invented demo example) or
+  `sourced` (compiled from public reporting). It drives `ProfileNotice`, which
+  shows the right top-of-profile disclaimer automatically. Missing/invalid
+  defaults to `fictional`, so demo content is never presented as real.
+- `sourced` profiles use outlet-level citations ("reported by …"). Do not
+  invent URLs, dates or titles, and do not mark a claim as individually
+  verified until a per-claim source link has been added and checked.
 - Affiliate links must keep `rel="nofollow sponsored"`.

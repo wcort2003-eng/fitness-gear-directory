@@ -1,5 +1,6 @@
 ---
 name: Alex Ironheart
+status: fictional
 tagline: Fictional example powerlifter
 sport: Powerlifting
 goals:

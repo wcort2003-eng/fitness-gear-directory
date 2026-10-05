@@ -72,9 +72,10 @@ export default function HomePage() {
           <p className="mt-2 max-w-3xl text-sm text-ink/70">
             Most &ldquo;what they use&rdquo; lists are guesswork. Every item
             here is meant to carry a source so you can judge it for yourself —
-            and nothing here is medical or health advice. (While the site is in
-            demo mode, all people, products and sources are fictional
-            placeholders.)
+            and nothing here is medical or health advice. (This site is in
+            early demo mode: some profiles are clearly-labelled fictional
+            examples and others are compiled from public reporting — each
+            profile says which at the top.)
           </p>
         </div>
       </section>

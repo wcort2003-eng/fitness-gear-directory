@@ -10,7 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
-import type { Article, GearItem, Profile } from "./types";
+import type { Article, GearItem, Profile, ProfileStatus } from "./types";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const PROFILES_DIR = path.join(CONTENT_DIR, "profiles");
@@ -51,8 +51,12 @@ export function getProfileBySlug(slug: string): Profile | undefined {
   if (!fs.existsSync(file)) return undefined;
 
   const { data, content } = matter(fs.readFileSync(file, "utf8"));
+  // Default to "fictional" so a missing/typo'd status never presents demo
+  // content as real.
+  const status: ProfileStatus = data.status === "sourced" ? "sourced" : "fictional";
   return {
     slug,
+    status,
     name: String(data.name ?? slug),
     tagline: String(data.tagline ?? ""),
     sport: String(data.sport ?? "Unspecified"),

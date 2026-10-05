@@ -23,10 +23,20 @@ export interface GearItem {
   affiliateLink: string;
 }
 
+/**
+ * Whether a profile is a fictional demo example or compiled from public
+ * reporting. Drives which disclaimer the profile page shows. Defaults to
+ * "fictional" when a file omits it, so a forgotten field never lets demo
+ * content masquerade as real.
+ */
+export type ProfileStatus = "fictional" | "sourced";
+
 /** One person featured in the directory. */
 export interface Profile {
   /** URL-safe id derived from the filename, e.g. "alex-ironheart". */
   slug: string;
+  /** Fictional demo example, or compiled from public reporting. */
+  status: ProfileStatus;
   /** Display name, e.g. "Alex Ironheart". */
   name: string;
   /** One-line description shown under the name. */

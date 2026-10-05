@@ -1,5 +1,6 @@
 ---
 name: Chris Hemsworth
+status: sourced
 tagline: Actor known for the "Thor" build
 sport: Physique
 goals:
@@ -8,6 +9,13 @@ goals:
 # No image for now. The profile template does not render a photo field yet;
 # this is left empty as a marker for licensed images or official embeds later.
 image: ""
+# ---------------------------------------------------------------------------
+# NON-PUBLIC TODO (YAML comment — never rendered on the site):
+# Citations below are OUTLET-LEVEL ONLY ("reported by" the named outlets).
+# Before this site goes live, add and verify a specific per-claim source link
+# (article URL + publication date) for every claim on this profile. Nothing
+# here is individually verified yet; outlet names are a starting point only.
+# ---------------------------------------------------------------------------
 summary: >-
   The "Thor" build: large, lean and shoulder- and arm-dominant. It looks
   attainable, but in reality it's an elite, job-funded physique built with a
@@ -19,7 +27,7 @@ gear:
       Hemsworth's own fitness app, built with his trainer Luke Zocchi and
       other coaches. It's the one branded product clearly tied to him; treat
       anything beyond it as not documented.
-    source: Men's Health Australia; T3 (coverage of Hemsworth and Centr).
+    source: Reported by Men's Health Australia and T3 (coverage of Hemsworth and Centr).
     affiliateLink: "#"
   - name: No documented supplement stack
     category: Supplement
@@ -28,8 +36,9 @@ gear:
       brand), no specific supplement stack is credibly documented. Rather than
       invent one, this profile states plainly that there isn't a verified list.
     source: >-
-      No credible primary source documents a specific stack. Diet framing per
-      Men's Fitness Australia and Men's Health Australia (trainer Luke Zocchi).
+      No credible primary source documents a specific stack. Diet framing
+      reported by Men's Fitness Australia and Men's Health Australia (trainer
+      Luke Zocchi).
     affiliateLink: "#"
 ---
 
@@ -40,8 +49,8 @@ yourself to it.
 
 ## Training
 
-Per his long-time trainer Luke Zocchi (interviews in *Men's Health Australia*
-and *Men's Fitness Australia*):
+As reported by *Men's Health Australia* and *Men's Fitness Australia*
+(interviews with his trainer Luke Zocchi):
 
 - **Four to five heavy weights sessions a week**, plus one lighter movement
   session.
@@ -53,7 +62,8 @@ and *Men's Fitness Australia*):
 
 ## Diet
 
-Also per Zocchi (*Men's Fitness Australia*, *Men's Health Australia*):
+As reported by *Men's Fitness Australia* and *Men's Health Australia* (trainer
+Luke Zocchi):
 
 - Described as **clean and high in protein**.
 - For bulking phases, the main lever is simply **eating much more than usual**.

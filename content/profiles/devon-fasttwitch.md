@@ -1,5 +1,6 @@
 ---
 name: Devon Fasttwitch
+status: fictional
 tagline: Fictional example sprinter
 sport: Track & Field
 goals:

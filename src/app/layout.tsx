@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PlaceholderBanner from "@/components/PlaceholderBanner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -26,8 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col">
-        <PlaceholderBanner />
-
         <header className="bg-ink text-paper">
           <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
             <Link href="/" className="text-lg font-semibold tracking-tight">

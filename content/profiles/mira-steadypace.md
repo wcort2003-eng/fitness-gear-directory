@@ -1,5 +1,6 @@
 ---
 name: Mira Steadypace
+status: fictional
 tagline: Fictional example distance runner
 sport: Distance Running
 goals:

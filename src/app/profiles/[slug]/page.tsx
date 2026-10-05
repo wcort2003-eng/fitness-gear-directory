@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Disclaimer from "@/components/Disclaimer";
 import GearItem from "@/components/GearItem";
+import ProfileNotice from "@/components/ProfileNotice";
 import { getProfileBySlug, getProfileSlugs } from "@/lib/content";
 import type { GearItem as GearItemType } from "@/lib/types";
 
@@ -57,6 +58,11 @@ export default async function ProfilePage({
       >
         ← Back to profiles
       </Link>
+
+      {/* Fictional vs sourced notice, driven by the profile's status field. */}
+      <div className="mt-4">
+        <ProfileNotice status={profile.status} />
+      </div>
 
       {/* Header */}
       <header className="mt-4">

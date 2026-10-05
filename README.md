@@ -47,6 +47,7 @@ Create a file in `content/profiles/`, e.g. `content/profiles/jane-doe.md`:
 ```markdown
 ---
 name: Jane Doe
+status: fictional             # "fictional" (demo example) or "sourced" (real, from public reporting)
 tagline: Short one-line description
 sport: Powerlifting           # used by the "sport" filter
 goals:                        # used by the "goal" filter
@@ -99,10 +100,12 @@ the layout. Before going live:
 4. Do **not** publish gear or supplement claims about real named people until
    you have sourced and verified them yourself.
 
-The site-wide "Demo site" banner and the health disclaimer are components
-(`src/components/PlaceholderBanner.tsx` and `Disclaimer.tsx`). Keep the
-disclaimer on any health/supplement content; remove the demo banner only once
-all data is real and sourced.
+Each profile shows a disclaimer at the top, chosen automatically by its
+`status` field (`src/components/ProfileNotice.tsx`): `fictional` profiles show
+a "fictional example" banner, `sourced` profiles show a "compiled from public
+reporting" notice. The separate health/supplement disclaimer
+(`src/components/Disclaimer.tsx`) stays on every profile. Set `status: sourced`
+only for real, publicly-reported content.
 
 ## Connecting the email signup
 
